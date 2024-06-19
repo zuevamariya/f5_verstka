@@ -2,16 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About job"
+    />
     <link rel="stylesheet" href="/bundle.css" />
-    <title>Document</title>
+    <title>Job</title>
   </head>
-  <body>
-    <h1>Hello</h1>
-    <div>
-      <h2>Ehhhooooo</h2>
-      <h3>00000</h3>
-      <img src="./images/raiskoe-ozero.orig.jpg" />
-    </div>
+  <body class="page">
+    <section class="decoration">
+      <header class="header">
+        <div class="header__logo">
+          <div class="header__logo_group">
+            <img src="./images/svg/I.svg" alt="I"/>
+            <img src="./images/svg/P.svg" alt="P"/>
+          </div>
+          <img class="header__logo_letter" src="./images/svg/S.svg" alt="S"/>
+          <div class="header__logo_group">
+            <img src="./images/svg/U.svg" alt="U"/>
+          <img src="./images/svg/M.svg" alt="M"/>
+          </div>
+          <img class="header__logo_point" src="./images/svg/point.svg" alt="point"/>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu_links">
+            <li><a class="header__menu_links-item" href="#">Home</a></li>
+            <li><a class="header__menu_links-item" href="#">Company</a></li>
+            <li><a class="header__menu_links-item" href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <a class="header__menu_links-item" href="#">Post a Job</a>
+          <button class="header__user_login-desktop">Log in</button>
+          <button class="header__user_login-mobile">
+            <img class="header__user_image" src="./images/svg/menu.svg" alt="menu" />
+          </button>
+        </div>
+      </header>
+    </section>
+    <main class="main">
+      <section class="search">
+        <div class="search__panel">
+          <button class="search__panel_button">New</button>
+          <span class="search__panel_text">Stay connected to get upcoming jobs</span>
+        </div>
+        <div class="search__info">
+          <h1 class="search__info_title">Find the most<br>exciting jobs in tech</h1>
+          <p  class="search__info_subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, 
+            pharetra leo et. Sign in or sign up to get started!
+          </p>
+        </div>
+        <div class="search__picture">
+          <div class="search__picture_field">
+            <div class="search__picture_block">
+              <img class="search__picture_field-image" src="./images/svg/loupe.svg" alt="loupe" />
+              <input class="search__picture_field-input" type="text" placeholder="Search…"/>
+            </div>
+            <button class="search__picture_field-button">Search</button>
+          </div>
+          <img class="search__picture_image-desktop" src="./images/png/building_desktop.png" alt="building" />
+          <img class="search__picture_image-mobile" src="./images/png/building_mobile.png" alt="building" />
+        </div>
+        <ul class="search__list">
+          <li><img class="search__list-item" src="./images/svg/OpenTable.svg" alt="OpenTable" /></li>
+          <li><img class="search__list-item" src="./images/svg/HubSpot.svg" alt="HubSpot" /></li>
+          <li><img class="search__list-item" src="./images/svg/amazon.svg" alt="amazon" /></li>
+          <li><img class="search__list-item" src="./images/svg/shopify.svg" alt="shopify" /></li>
+          <li><img class="search__list-item" src="./images/svg/slack.svg" alt="slack" /></li>
+          <li><img class="search__list-item" src="./images/svg/Dropbox.svg" alt="Dropbox" /></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

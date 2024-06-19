@@ -1,0 +1,132 @@
+.header {
+  margin-block-start: 65px;
+  margin-block-end: 26px;
+  margin-inline-end: clamp(0.6875rem, -4.4551rem + 21.9417vw, 21.875rem);
+  margin-inline-start: clamp(0.6875rem, -5.6687rem + 27.1197vw, 26.875rem);
+  max-height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.header__logo {
+  padding: 5px 0 2px;
+  display: flex;
+  max-height: 40px;
+  align-items: center;
+  position: relative;
+  gap: 27px;
+}
+
+.header__logo_group {
+  display: flex;
+  gap: 3px;
+}
+
+.header__logo_letter {
+  position: absolute;
+  left: 42px;
+  width: 31px;
+  height: 37px;
+}
+
+.header__logo_point {
+  position: absolute;
+  left: 162px;
+  bottom: 32px;
+  width: 8px;
+  height: 9px;
+}
+
+.header__user_login-mobile {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__menu_links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.header__menu_links-item {
+  text-decoration: none;
+}
+
+.links__list-item:active {
+  color: #443FDE;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__user_login-desktop {
+  background-color: #443FDE;
+  color: #FFF;
+  text-align: center;
+  width: 80px;
+  height: 44px;
+  border: none;
+}
+
+@media (width < 950px) {
+
+  .header__menu_links {
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+
+@media (width < 600px) {
+
+  .header__user {
+    flex-direction: column-reverse;
+    gap: 3px;
+  }
+}
+
+@media (width < 376px) {
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu_links-item {
+    display: none;
+  }
+
+  .header__user_login-desktop {
+    display: none;
+  }
+
+  .header {
+    margin: 24px 11px;
+  }
+
+  .header__logo {
+    margin-inline-start: 12px;
+  }
+
+  .header__user_login-mobile {
+    padding-inline-end: 15px;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #EBEBEF;
+    width: 46px;
+    height: 46px;
+  }
+
+  .header__user_image {
+    width: 15px;
+    height: 11px;
+  }
+}
