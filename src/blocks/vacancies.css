@@ -1,0 +1,251 @@
+.vacancies {
+  background-color: #F9F9FB;
+}
+
+.vacancies__info {
+  padding-block-start: 70px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr  1fr;
+  align-items: end;
+  justify-items: end;
+}
+
+.vacancies__info_text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.vacancies__info_text-title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.9px;
+}
+
+.vacancies__info_text-subtitle {
+  line-height: 28.8px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+
+.vacancies__info_button {
+  width: 119px;
+  height: 44px;
+}
+
+.vacancies__cards {
+  padding-block-end: 70px;
+  margin-block-start: 55px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.vacancies__cards_item {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #EBEBEF;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.vacancies__cards_item-top {
+  display: flex;
+  gap: 10px;
+  margin-block-end: 22px;
+}
+
+.vacancies__cards_item-image {
+  width: 56px;
+  height: 56px;
+}
+
+.vacancies__cards_item-data {
+  display: grid;
+}
+
+.vacancies__cards_item-company {
+  color: #030407;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.8px;
+  letter-spacing: -0.3px;
+}
+
+.vacancies__cards_item-date {
+  color: #606476;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: -0.3px;
+}
+
+.vacancies__cards_item-bottom {
+  display: grid;
+}
+
+.vacancies__cards_item-marker {
+  margin-block: 25px;
+  display: flex;
+  gap: 7px;
+}
+
+.vacancies__cards_item-location {
+  align-items: start;
+  width: 17px;
+  height: 20px;
+}
+
+.vacancies__cards_item-salary {
+  width: 24px;
+  height: 24px;
+}
+
+.vacancies__cards_item-area {
+  color: #443FDE;
+  background-color: #F3F3FC;
+}
+
+.vacancies__cards_item-time {
+  color: #C98B40;
+  background-color: #FEF7F1;
+}
+
+.vacancies__cards_item-info {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.note {
+  color: #606476;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: -0.4px;
+}
+
+.vacancies__cards_item-text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 7px;
+}
+
+@media (width < 1905px) {
+  
+  .vacancies__info {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  min-content;
+    gap: 50px;
+  }
+}
+
+@media (width < 1560px) {
+
+  .vacancies__cards_item-info {
+    display: grid;
+    gap: 0;
+  }
+}
+
+@media (width < 1400px) {
+
+  .vacancies__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (width < 970px) {
+
+  .vacancies__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    margin-block-start: 5px;
+  }
+
+  .vacancies__info {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: start;
+    gap: 5px;
+  }
+
+  .vacancies__cards_item {
+    max-width: 350px;
+  }
+
+  .vacancies__info_button {
+    width: 200px;
+    margin-block: 30px;
+  }
+}
+
+@media (width < 376px) {
+
+  .vacancies__cards_item-top {
+    margin-block-end: 25px;
+  }
+
+  .vacancies__cards_item-bottom {
+    margin-block-start: 25px;
+  }
+
+  .vacancies__cards_item-company {
+    padding-block-start: 10px;
+  }
+  
+  .vacancies__cards_item-date {
+    padding-block-start: 10px;
+  }
+
+  .vacancies__info {
+    padding-block-start: 30px;
+    padding-inline-start: 10px;
+  }
+
+  .vacancies__cards {
+    padding-inline-start: 10px;
+    padding-block-start: 15px;
+    gap: 31px;
+  }
+
+  .vacancies__cards_item {
+    max-height: 263px;
+    width: 337px;
+    padding: 30px 30px 3px 25px;
+  }
+
+  .vacancies__info_button {
+    min-width: 337px;
+    margin-block: 30px 40px;
+  }
+
+  .vacancies__cards_item-marker {
+    display: grid;
+    justify-content: start;
+    gap: 0;
+    margin-block: 0;
+  }
+
+  .vacancies__cards_item-text {
+    align-items: center;
+  }
+
+  .vacancies__cards_item-date,
+  .vacancies__cards_item-company {
+    line-height: 16.8px;
+  }
+}
