@@ -1,0 +1,113 @@
+.companies {
+  display: grid;
+  gap: 10px;
+}
+
+.companies__info {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-block: 55px 50px;
+}
+
+.companies__info_text {
+  display: grid;
+  gap: 5px;
+}
+
+.companies__info_text-title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+.companies__info_text-subtitle {
+  color: #606476;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+}
+
+.companies__info_button {
+  display: flex;
+  gap: 20px;
+}
+
+.companies__slider {
+  list-style: none;
+  height: clamp(18.375rem, 18.1323rem + 1.0356vw, 19.375rem);
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+  position: relative;
+  margin-block-end: 50px;
+}
+
+.companies__slider_item {
+  min-width: 390px;
+  border: 1px solid #EBEBEF;
+  padding: 40px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.companies__slider_item-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.companies__slider_item-image {
+  width: 56px;
+  height: 56px;
+}
+
+.companies__slider_item-company {
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.companies__slider_item-info {
+  margin-block: 25px 30px;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0.3px;
+}
+
+.companies__slider_item-employees {
+  background-color: #F1F8F4;
+  color: #246B49;
+  padding: 10px 15px;
+}
+
+@media (width < 1100px) {
+
+  .companies__info {
+    display: grid;
+    gap: 20px;
+    padding-block: 30px 15px;
+  }
+
+}
+
+@media (width < 376px) {
+  
+  .companies {
+    padding-inline-start: 10px;
+  }
+
+  .companies__info_text {
+    gap: 5px;
+    margin-block-end: 10px;
+  }
+
+  .companies__info_text-subtitle {
+    letter-spacing: 0.1px;
+  }
+
+  .companies__slider_item {
+    padding: 30px;
+    min-width: 338px;
+  }
+}
