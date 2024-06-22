@@ -35,7 +35,6 @@
 .vacancies__cards {
   padding-block-end: 70px;
   margin-block-start: 55px;
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;

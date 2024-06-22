@@ -13,23 +13,23 @@
   </head>
   <body class="page">
     <header class="header section-size">
-      <div class="header__logo">
-        <div class="header__logo_group">
+      <div class="header__logo logo">
+        <div class="logo__group">
           <img src="./images/svg/I.svg" alt="I"/>
           <img src="./images/svg/P.svg" alt="P"/>
         </div>
-        <img class="header__logo_letter" src="./images/svg/S.svg" alt="S"/>
-        <div class="header__logo_group">
+        <img class="header__logo_letter logo__letter" src="./images/svg/S.svg" alt="S"/>
+        <div class="logo__group">
           <img src="./images/svg/U.svg" alt="U"/>
-        <img src="./images/svg/M.svg" alt="M"/>
+          <img src="./images/svg/M.svg" alt="M"/>
         </div>
-        <img class="header__logo_point" src="./images/svg/point.svg" alt="point"/>
+        <img class="header__logo_point logo__point" src="./images/svg/point.svg" alt="point"/>
       </div>
-      <nav class="header__menu">
-        <ul class="header__menu_links">
-          <li><a class="header__menu_links-item" href="#">Home</a></li>
-          <li><a class="header__menu_links-item" href="#">Company</a></li>
-          <li><a class="header__menu_links-item" href="#">Blog</a></li>
+      <nav>
+        <ul class="header__menu_links list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </nav>
       <div class="header__user">
@@ -40,8 +40,8 @@
         </button>
       </div>
     </header>
-    <section class="decoration"></section>
     <main class="main">
+      <section class="decoration"></section>
       <section class="search section-size">
         <div class="search__panel">
           <button class="span search__panel_button">New</button>
@@ -55,17 +55,17 @@
           </p>
         </div>
         <div class="search__picture">
-          <div class="search__picture_field">
-            <div class="search__picture_block">
-              <img class="search__picture_field-image" src="./images/svg/loupe.svg" alt="loupe" />
-              <input class="search__picture_field-input" type="text" placeholder="Search…"/>
+          <div class="search__picture_field panel">
+            <div class="panel__block">
+              <img class="panel__block_image" src="./images/svg/loupe.svg" alt="loupe" />
+              <input class="panel__block_input" type="text" placeholder="Search…"/>
             </div>
-            <button class="button search__picture_field-button">Search</button>
+            <button class="button panel__button">Search</button>
           </div>
           <img class="search__picture_image-desktop" src="./images/png/building_desktop.png" alt="building" />
           <img class="search__picture_image-mobile" src="./images/png/building_mobile.png" alt="building" />
         </div>
-        <ul class="search__list">
+        <ul class="search__list list">
           <li><img src="./images/svg/OpenTable.svg" alt="OpenTable" /></li>
           <li><img src="./images/svg/HubSpot.svg" alt="HubSpot" /></li>
           <li><img src="./images/svg/amazon.svg" alt="amazon" /></li>
@@ -86,7 +86,7 @@
             </div>
             <button class="button vacancies__info_button">See All Jobs</button>
           </div>
-          <ul class="vacancies__cards">
+          <ul class="vacancies__cards list">
             <li class="title vacancies__cards_item">
               <div class="vacancies__cards_item-top">
                 <img class="vacancies__cards_item-image" src="./images/png/Dribble.png" alt="Dribble"/>
@@ -269,7 +269,7 @@
             </button>
           </div>
         </div>
-        <ul class="companies__slider">
+        <ul class="companies__slider list">
           <li class="companies__slider_item">
             <div class="companies__slider_item-box">
               <img class="companies__slider_item-image" src="./images/png/Dribble.png" alt="Dribble"/>
@@ -351,7 +351,7 @@
             leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed 
             laoreet feugiat consequat.
           </p>
-          <ul class="site__info_list">
+          <ul class="site__info_list list">
             <li class="site__info_list-item">
               <img class="site__info_list-item-image" src="./images/png/site_section_icon.png" alt="icon" />
               <span class="site__info_list-title">Add a feature point here</span>
@@ -419,7 +419,7 @@
             </button>
           </div>
         </div>
-        <ul class="news__slider">
+        <ul class="news__slider list">
           <li class="news__slider_item">
             <img class="news__slider_item-image_mobile news__slider_item-top" src="./images/png/news_section_1-mobile.png" alt="office room" />
             <img class="news__slider_item-image news__slider_item-top" src="./images/png/news_section_1.png" alt="office room" />
@@ -483,7 +483,62 @@
           </li>
         </ul>
       </section>
+      <section class="section-size">
+        <div class="job">
+          <div class="job__search">
+            <img class="job__search_image" src="./images/png/loupe.png" alt="loupe" />
+          </div>
+          <div class="job__info background">
+            <h2 class="title job__info_title">Explore a job now!</h2>
+            <p class="describe job__info_describe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus pharetra 
+              cursus. Suspendisse sodales porta leo, ac placerat ex pretium quis.
+            </p>
+          </div>
+          <div class="job__panel panel">
+            <div class="panel__block">
+              <img class="panel__block_image" src="./images/svg/loupe.svg" alt="loupe" />
+              <input class="panel__block_input" type="text" placeholder="Search…"/>
+            </div>
+            <button class="button panel__button">Search</button>
+          </div>
+        </div>
+      </section>
+      <section class="decoration"></section>
     </main>
+    <footer class="footer section-size">
+      <div class="footer__logo logo">
+        <div class="logo__group">
+          <img src="./images/svg/I.svg" alt="I"/>
+          <img src="./images/svg/P.svg" alt="P"/>
+        </div>
+        <img class="footer__logo_letter logo__letter" src="./images/svg/S.svg" alt="S"/>
+        <div class="logo__group">
+          <img src="./images/svg/U.svg" alt="U"/>
+          <img src="./images/svg/M.svg" alt="M"/>
+        </div>
+        <img class="footer__logo_point logo__point" src="./images/svg/point.svg" alt="point"/>
+      </div>
+      <div class="footer__info">
+        <div class="footer__info_nav">
+          <span class="footer__info_nav-marker">pages</span>
+          <nav>
+            <ul class="footer__info_nav-list list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__info_search">
+          <span class="footer__info_nav-marker">Sign up to our newsletter</span>
+          <div class="footer__info_search-panel footer__panel">
+            <input class="footer__panel_input" type="text" placeholder="Email address"/>
+            <button class="button footer__panel_button">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

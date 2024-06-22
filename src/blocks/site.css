@@ -47,7 +47,6 @@
   padding-block-start: 35px;
   display: grid;
   gap: 15px;
-  list-style: none;
   width: clamp(21.125rem, 18.3944rem + 11.6505vw, 32.375rem);
 }
 

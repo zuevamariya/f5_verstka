@@ -36,7 +36,6 @@
 }
 
 .companies__slider {
-  list-style: none;
   height: clamp(18.375rem, 18.1323rem + 1.0356vw, 19.375rem);
   display: flex;
   gap: 25px;

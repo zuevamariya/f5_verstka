@@ -1,0 +1,82 @@
+.job {
+  position: relative;
+}
+
+.job__search {
+  text-align: center;
+  padding-block: 16px;
+  border: 1px solid #EBEBEF;
+  width: clamp(19.8125rem, 8.3592rem + 48.8673vw, 67rem);
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  left: clamp(0.625rem, 0.2609rem + 1.5534vw, 2.125rem);
+  top: -34px;
+}
+
+.job__search_image {
+  width: 32px;
+  height: 32px;
+}
+
+.job__info {
+  height: 314px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 0;
+  margin-block: 110px;
+  max-width: 1140px;
+}
+
+.job__info_title {
+  font-size: 32px;
+  line-height: 44.8px;
+  letter-spacing: -0.6px;
+}
+
+.job__info_describe {
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0.1px;
+  width: clamp(19.875rem, 17.2658rem + 11.1327vw, 30.625rem);
+  padding-inline: 18px;
+  text-align: center;
+}
+
+.job__panel {
+  position: absolute;
+  z-index: 1;
+  left: clamp(0rem, -3.1857rem + 13.5922vw, 13.125rem);
+  bottom: -40px;
+}
+
+@media (width < 376px) {
+
+  .job {
+    padding-inline-start: 10px;
+  }
+
+  .job__info {
+    margin-block: 57px 0;
+    padding-block-start: 20px;
+  }
+
+  .job__search {
+    left: 20px;
+    top: -34px;
+    padding-block: 12px;
+  }
+
+  .job__panel {
+    position: static;
+    margin-block-end: 30px;
+  }
+
+  .job__info_describe {
+    letter-spacing: -0.48px;
+  }
+
+}
