@@ -54,9 +54,6 @@
     flex-direction: column;
     gap: 3px;
   }
-}
-
-@media (width < 600px) {
 
   .header__user {
     flex-direction: column-reverse;
@@ -64,26 +61,18 @@
   }
 }
 
-@media (width < 376px) {
-
-  .header__menu {
-    display: none;
-  }
-
-  .header__menu_links-item {
-    display: none;
-  }
+@media (width < 600px) {
 
   .header__user_login-desktop {
     display: none;
   }
 
-  .header {
-    margin: 24px 11px;
+  .header__menu {
+    display: none;
   }
 
-  .header__logo {
-    margin-inline-start: 12px;
+  .header__menu_item {
+    display: none;
   }
 
   .header__user_login-mobile {
@@ -93,6 +82,17 @@
     border: 1px solid #EBEBEF;
     width: 46px;
     height: 46px;
+  }
+}
+
+@media (width < 376px) {
+
+  .header {
+    margin: 24px 11px;
+  }
+
+  .header__logo {
+    margin-inline-start: 12px;
   }
 
   .header__user_image {
