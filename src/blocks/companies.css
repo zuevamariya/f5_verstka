@@ -45,10 +45,164 @@
 }
 
 .companies__slider_item {
-  min-width: 390px;
+  height: clamp(18.375rem, 18.1323rem + 1.0356vw, 19.375rem);
+  width: 390px;
   border: 1px solid #EBEBEF;
   padding: 40px;
-  transition: transform 0.5s ease-in-out;
+  position: absolute;
+}
+
+.companies__slider:hover .companies__slider_item {
+  animation-play-state: paused;
+}
+
+.firstanimation-companies {
+  animation: firstslide 15s ease-in-out infinite;
+}
+
+.secondanimation-companies {
+  animation: secondslide 15s ease-in-out infinite;
+}
+
+.thirdanimation-companies {
+  animation: thirdslide 15s ease-in-out infinite;
+}
+
+.fourthanimation-companies {
+  animation: otherslide 15s ease-in-out infinite;
+}
+
+.fifthanimation-companies {
+  opacity: 0;
+  animation: otherslide 15s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+.sixthanimation-companies {
+  opacity: 0;
+  animation: otherslide 15s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes firstslide {
+
+  0%, 100% { 
+    left: 0; 
+    opacity: 1; 
+  }
+  
+  16.6%, 
+  33.2% { 
+    left: -415px; 
+    opacity: 0; 
+  }
+  
+  50% { 
+    left: 1235px; 
+    opacity: 0; 
+  }
+  
+  66.7% { 
+    left: 830px; 
+    opacity: 1; 
+  }
+
+  83.3% { 
+    left: 415px; 
+    opacity: 1; 
+  }
+}
+
+@keyframes secondslide {
+
+  0%, 
+  100% { 
+    left: 415px; 
+    opacity: 1; 
+  }
+
+  16.6% { 
+    left: 0; 
+    opacity: 1; 
+  }
+
+  33.2%,
+  50% { 
+    left: -415px; 
+    opacity: 0; 
+  }
+
+  66.7% { 
+    left: 1235px; 
+    opacity: 0; 
+  }
+
+  83.3% { 
+    left: 830px; 
+    opacity: 1; 
+  }
+
+}
+
+@keyframes thirdslide {
+
+  0%, 
+  100% { 
+    left: 830px; 
+    opacity: 1; 
+  }
+  
+  16.6% { 
+    left: 415px; 
+    opacity: 1; 
+  }
+
+  33.2% { 
+    left: 0; 
+    opacity: 1; 
+  }
+
+  50%,
+  66.7% { 
+    left: -415px; 
+    opacity: 0; 
+  }
+
+  83.3% { 
+    left: 1235px; 
+    opacity: 0; 
+  }
+
+}
+
+@keyframes otherslide {
+
+  0%,
+  100% { 
+    left: 1235px; 
+    opacity: 0; 
+  }
+
+  16.6% { 
+    left: 830px; 
+    opacity: 1; 
+  }
+
+  33.2% { 
+    left: 415px; 
+    opacity: 1; 
+  }
+
+  50% { 
+    left: 0; 
+    opacity: 1; 
+  }
+
+  66.7%,
+  83.3% { 
+    left: -415px; 
+    opacity: 0; 
+  }
 }
 
 .companies__slider_item-box {
@@ -87,7 +241,141 @@
     gap: 20px;
     padding-block: 30px 15px;
   }
+}
 
+@media (width < 550px) {
+
+  .companies__slider {
+    gap: 7px;
+  }
+
+  .companies__slider_item {
+    padding: 30px;
+    width: 338px;
+  }
+
+  @keyframes firstslide {
+
+    0%, 100% { 
+      left: 0; 
+      opacity: 1; 
+    }
+    
+    16.6%, 
+    33.2%,
+    50%,
+    66.7% { 
+      left: -345px; 
+      opacity: 0; 
+    }
+    
+    50% { 
+      left: 1035px; 
+      opacity: 0; 
+    }
+    
+    66.7% { 
+      left: 690px; 
+      opacity: 1; 
+    }
+  
+    83.3% { 
+      left: 345px; 
+      opacity: 1; 
+    }
+  }
+  
+  @keyframes secondslide {
+  
+    0%, 
+    100% { 
+      left: 345px; 
+      opacity: 1; 
+    }
+  
+    16.6% { 
+      left: 0; 
+      opacity: 1; 
+    }
+  
+    33.2%,
+    50% { 
+      left: -345px; 
+      opacity: 0; 
+    }
+  
+    66.7% { 
+      left: 1035px; 
+      opacity: 0; 
+    }
+  
+    83.3% { 
+      left: 690px; 
+      opacity: 1; 
+    }
+  
+  }
+  
+  @keyframes thirdslide {
+  
+    0%, 
+    100% { 
+      left: 690px; 
+      opacity: 1; 
+    }
+    
+    16.6% { 
+      left: 345px; 
+      opacity: 1; 
+    }
+  
+    33.2% { 
+      left: 0; 
+      opacity: 1; 
+    }
+  
+    50%,
+    66.7% { 
+      left: -345px; 
+      opacity: 0; 
+    }
+  
+    83.3% { 
+      left: 1035px; 
+      opacity: 0; 
+    }
+  
+  }
+  
+  @keyframes otherslide {
+  
+    0%,
+    100% { 
+      left: 1035px; 
+      opacity: 0; 
+    }
+  
+    16.6% { 
+      left: 690px; 
+      opacity: 1; 
+    }
+  
+    33.2% { 
+      left: 345px; 
+      opacity: 1; 
+    }
+  
+    50% { 
+      left: 0; 
+      opacity: 1; 
+    }
+  
+    66.7%,
+    83.3% { 
+      left: -345px; 
+      opacity: 0; 
+    }
+  }
 }
 
 @media (width < 376px) {
@@ -103,10 +391,5 @@
 
   .companies__info_text-subtitle {
     letter-spacing: 0.1px;
-  }
-
-  .companies__slider_item {
-    padding: 30px;
-    min-width: 338px;
   }
 }
