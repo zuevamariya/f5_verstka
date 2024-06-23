@@ -58,34 +58,34 @@
 }
 
 .firstanimation-companies {
-  animation: firstslide 15s ease-in-out infinite;
+  animation: firstcompanies 15s ease-in-out infinite;
 }
 
 .secondanimation-companies {
-  animation: secondslide 15s ease-in-out infinite;
+  animation: secondcompanies 15s ease-in-out infinite;
 }
 
 .thirdanimation-companies {
-  animation: thirdslide 15s ease-in-out infinite;
+  animation: thirdcompanies 15s ease-in-out infinite;
 }
 
 .fourthanimation-companies {
-  animation: otherslide 15s ease-in-out infinite;
+  animation: othercompanies 15s ease-in-out infinite;
 }
 
 .fifthanimation-companies {
   opacity: 0;
-  animation: otherslide 15s ease-in-out infinite;
+  animation: othercompanies 15s ease-in-out infinite;
   animation-delay: 2.5s;
 }
 
 .sixthanimation-companies {
   opacity: 0;
-  animation: otherslide 15s ease-in-out infinite;
+  animation: othercompanies 15s ease-in-out infinite;
   animation-delay: 5s;
 }
 
-@keyframes firstslide {
+@keyframes firstcompanies {
 
   0%, 100% { 
     left: 0; 
@@ -114,7 +114,7 @@
   }
 }
 
-@keyframes secondslide {
+@keyframes secondcompanies {
 
   0%, 
   100% { 
@@ -145,7 +145,7 @@
 
 }
 
-@keyframes thirdslide {
+@keyframes thirdcompanies {
 
   0%, 
   100% { 
@@ -176,7 +176,7 @@
 
 }
 
-@keyframes otherslide {
+@keyframes othercompanies {
 
   0%,
   100% { 
@@ -255,7 +255,7 @@
     width: 338px;
   }
 
-  @keyframes firstslide {
+  @keyframes firstcompanies {
 
     0%, 100% { 
       left: 0; 
@@ -286,7 +286,7 @@
     }
   }
   
-  @keyframes secondslide {
+  @keyframes secondcompanies {
   
     0%, 
     100% { 
@@ -317,7 +317,7 @@
   
   }
   
-  @keyframes thirdslide {
+  @keyframes thirdcompanies {
   
     0%, 
     100% { 
@@ -348,7 +348,7 @@
   
   }
   
-  @keyframes otherslide {
+  @keyframes othercompanies {
   
     0%,
     100% { 
