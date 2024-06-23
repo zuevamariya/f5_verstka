@@ -54,6 +54,7 @@
 
 .companies__slider:hover .companies__slider_item {
   animation-play-state: paused;
+  cursor: pointer;
 }
 
 .firstanimation-companies {
