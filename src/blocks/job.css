@@ -27,7 +27,7 @@
   align-items: center;
   gap: 20px;
   z-index: 0;
-  margin-block: 110px;
+  margin-block: 130px 110px;
   max-width: 1140px;
 }
 
@@ -60,7 +60,7 @@
   }
 
   .job__info {
-    margin-block: 57px 0;
+    margin-block: 65px 0;
     padding-block-start: 20px;
   }
 
