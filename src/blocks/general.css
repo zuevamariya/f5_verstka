@@ -26,17 +26,6 @@
   padding: 6px 12px;
 }
 
-
-
-.describe {
-  font-weight: 400;
-}
-
-
-
-
-
-
 .decoration {
   border-bottom: 1px solid #EBEBEF;
 }
@@ -64,6 +53,10 @@
 
 .nav-link:active {
   color: #443FDE;
+}
+
+input::placeholder {
+  color: #999;
 }
 
 .panel {
@@ -123,14 +116,62 @@
   border: 1px solid #EBEBEF;
 }
 
-
-
-
-
-
+.button-arrow-small {
+  width: 48px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #EBEBEF;
+}
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.logo {
+  padding: 5px 0 2px;
+  display: flex;
+  max-height: 40px;
+  align-items: center;
+  gap: 27px;
+}
+
+.logo__group {
+  display: flex;
+  gap: 3px;
+}
+
+.logo__letter {
+  left: 42px;
+  width: 31px;
+  height: 37px;
+}
+
+.logo__point {
+  left: 162px;
+  bottom: 32px;
+  width: 8px;
+  height: 9px;
+}
+
+@media (width < 376px) {
+
+  .panel {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 126px;
+    padding-block: 8px;
+  }
+
+  .panel__block {
+    width: 312px;
+    margin: 0;
+  }
+
+  .panel__button {
+    width: 312px;
+    margin: 0;
+  }
 }

@@ -14,12 +14,13 @@
   top: -34px;
 }
 
-.job__search_image {
+.job__search-image {
+  margin: 0 auto;
   width: 32px;
   height: 32px;
 }
 
-.job__info {
+.job__article {
   height: 314px;
   display: flex;
   flex-direction: column;
@@ -31,13 +32,13 @@
   max-width: 1140px;
 }
 
-.job__info_title {
+.job__article-title {
   font-size: 32px;
   line-height: 44.8px;
   letter-spacing: -0.6px;
 }
 
-.job__info_describe {
+.job__article-paragraph {
   font-size: 16px;
   line-height: 28.8px;
   letter-spacing: 0.1px;
@@ -59,7 +60,7 @@
     padding-inline-start: 10px;
   }
 
-  .job__info {
+  .job__article {
     margin-block: 65px 0;
     padding-block-start: 20px;
   }
@@ -75,7 +76,7 @@
     margin-block-end: 30px;
   }
 
-  .job__info_describe {
+  .job__article-paragraph {
     letter-spacing: -0.48px;
   }
 

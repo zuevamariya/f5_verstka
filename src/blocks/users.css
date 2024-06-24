@@ -139,7 +139,7 @@
   letter-spacing: 0.2px;
 }
 
-.users__box_info-button {
+.users__button {
   display: flex;
   gap: 20px;
   position: absolute;
@@ -147,7 +147,7 @@
   z-index: 1;
 }
 
-.users__box_info-button_small {
+.users__button-small {
   display: none;
 }
 
@@ -178,7 +178,7 @@
   }
 
   .users__box {
-    margin-block: 10px 40px;
+    margin-block: 10px 35px;
   }
 
   .users__slider-image {
@@ -195,7 +195,7 @@
     flex-direction: column-reverse;
   }
 
-  .users__box_info-button_small {
+  .users__button-small {
     display: flex;
     gap: 10px;
     padding-inline-end: 10px;
@@ -206,7 +206,7 @@
   }
 
   .users__slider {
-    height: 350px;
+    height: 358px;
   }
   
   .users__slider-info {
@@ -217,7 +217,7 @@
     letter-spacing: -0.6px;
   }
 
-  .users__box_info-button {
+  .users__button {
     display: none;
   }
 

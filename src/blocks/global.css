@@ -7,7 +7,6 @@
 body {
   min-width: 375px;
   margin: 0;
-  font-family: Inter, sans-serif;
 }
 
 h1,
@@ -37,8 +36,4 @@ a {
 
 img {
   width: 100%;
-}
-
-a:active {
-  color: #443FDE;
 }
