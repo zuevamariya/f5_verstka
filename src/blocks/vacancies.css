@@ -2,7 +2,7 @@
   padding-block-start: 70px;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr  1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: end;
   justify-items: end;
 }
@@ -44,7 +44,7 @@
 
 .vacancies__cards-item {
   background-color: #fff;
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -106,13 +106,13 @@
 }
 
 .item__bottom-marker-area {
-  color: #443FDE;
-  background-color: #F3F3FC;
+  color: #443fde;
+  background-color: #f3f3fc;
 }
 
 .item__bottom-marker-time {
-  color: #C98B40;
-  background-color: #FEF7F1;
+  color: #c98b40;
+  background-color: #fef7f1;
 }
 
 .item__bottom-container {
@@ -137,10 +137,10 @@
 }
 
 @media (width < 1905px) {
-  
+
   .vacancies__info {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr  min-content;
+    grid-template-columns: 1fr min-content;
     gap: 50px;
   }
 }
@@ -202,7 +202,7 @@
   .item__top-paragraph-company {
     padding-block-start: 10px;
   }
-  
+
   .item__top-paragraph-date {
     padding-block-start: 10px;
   }
@@ -244,5 +244,4 @@
   .item__top-paragraph-company {
     line-height: 16.8px;
   }
-
 }

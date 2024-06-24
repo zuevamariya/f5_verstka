@@ -1,4 +1,4 @@
-.news { 
+.news {
   margin-block: 65px 60px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .news__slider-item {
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
   height: 510px;
   width: clamp(21.125rem, 20.3362rem + 3.3657vw, 24.375rem);
   position: absolute;
@@ -57,118 +57,117 @@
 
 @keyframes firstnews {
 
-  0%, 100% { 
-    left: 0; 
-    opacity: 1; 
-  }
-  
-  20% { 
-    left: -410px; 
-    opacity: 0; 
-  }
-  
-  40% { 
-    left: 1230px; 
-    opacity: 0; 
-  }
-  
-  60% { 
-    left: 820px; 
-    opacity: 1; 
+  0%,
+  100% {
+    left: 0;
+    opacity: 1;
   }
 
-  80% { 
-    left: 410px; 
-    opacity: 1; 
+  20% {
+    left: -410px;
+    opacity: 0;
+  }
+
+  40% {
+    left: 1230px;
+    opacity: 0;
+  }
+
+  60% {
+    left: 820px;
+    opacity: 1;
+  }
+
+  80% {
+    left: 410px;
+    opacity: 1;
   }
 }
 
 @keyframes secondnews {
 
-  0%, 
-  100% { 
-    left: 410px; 
-    opacity: 1; 
+  0%,
+  100% {
+    left: 410px;
+    opacity: 1;
   }
 
-  20% { 
-    left: 0; 
-    opacity: 1; 
+  20% {
+    left: 0;
+    opacity: 1;
   }
 
-  40% { 
-    left: -410px; 
-    opacity: 0; 
+  40% {
+    left: -410px;
+    opacity: 0;
   }
 
-  60% { 
-    left: 1230px; 
-    opacity: 0; 
+  60% {
+    left: 1230px;
+    opacity: 0;
   }
 
-  80% { 
-    left: 820px; 
-    opacity: 1; 
+  80% {
+    left: 820px;
+    opacity: 1;
   }
-
 }
 
 @keyframes thirdnews {
 
-  0%, 
-  100% { 
-    left: 820px; 
-    opacity: 1; 
-  }
-  
-  20% { 
-    left: 410px; 
-    opacity: 1; 
+  0%,
+  100% {
+    left: 820px;
+    opacity: 1;
   }
 
-  40% { 
-    left: 0; 
-    opacity: 1; 
+  20% {
+    left: 410px;
+    opacity: 1;
   }
 
-  60% { 
-    left: -410px; 
-    opacity: 0; 
+  40% {
+    left: 0;
+    opacity: 1;
   }
 
-  80% { 
-    left: 1230px; 
-    opacity: 0; 
+  60% {
+    left: -410px;
+    opacity: 0;
   }
 
+  80% {
+    left: 1230px;
+    opacity: 0;
+  }
 }
 
 @keyframes othernews {
 
   0%,
-  100% { 
-    left: 1230px; 
-    opacity: 0; 
+  100% {
+    left: 1230px;
+    opacity: 0;
   }
 
-  20% { 
-    left: 820px; 
-    opacity: 1; 
+  20% {
+    left: 820px;
+    opacity: 1;
   }
 
-  40% { 
-    left: 410px; 
-    opacity: 1; 
+  40% {
+    left: 410px;
+    opacity: 1;
   }
 
-  60% { 
-    left: 0; 
-    opacity: 1; 
+  60% {
+    left: 0;
+    opacity: 1;
   }
 
-  80% { 
-    left: -410px; 
-    opacity: 0; 
+  80% {
+    left: -410px;
+    opacity: 0;
   }
 }
 
@@ -189,8 +188,8 @@
 }
 
 .news__slider-bottom-marker {
-  color: #443FDE;
-  background-color: #F3F3FC;
+  color: #443fde;
+  background-color: #f3f3fc;
   padding: 6px 12px;
 }
 
@@ -226,14 +225,14 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  color: #F9F9FB;
+  color: #f9f9fb;
   border: none;
   height: 45px;
   width: clamp(17rem, 16.2112rem + 3.3657vw, 20.25rem);
 }
 
 .news__slider-button-text {
-  color: #24262D;
+  color: #24262d;
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
@@ -264,16 +263,7 @@
   }
 }
 
-@media (width < 376px) {
-
-  .news { 
-    margin-block: 35px;
-  }
-
-  .news__slider-bottom {
-    margin-block: 0;
-    margin-inline-start: 10px;
-  }
+@media (width < 450px) {
 
   .firstanimation-news {
     animation: onenews 10s ease-in-out infinite;
@@ -282,13 +272,13 @@
   .secondanimation-news {
     animation: nextnews 10s ease-in-out infinite;
   }
-  
+
   .thirdanimation-news {
     animation: nextnews 10s ease-in-out infinite;
     opacity: 0;
     animation-delay: 2.5s;
   }
-  
+
   .fourthanimation-news {
     animation: nextnews 10s ease-in-out infinite;
     opacity: 0;
@@ -297,40 +287,53 @@
 
   @keyframes onenews {
 
-    0%, 100% { 
-      left: 0; 
-      opacity: 1; 
+    0%,
+    100% {
+      left: 0;
+      opacity: 1;
     }
-    
+
     25%,
-    50% { 
-      left: -410px; 
-      opacity: 0; 
+    50% {
+      left: -410px;
+      opacity: 0;
     }
-    
-    75% { 
-      left: 410px; 
-      opacity: 0; 
+
+    75% {
+      left: 410px;
+      opacity: 0;
     }
   }
 
   @keyframes nextnews {
 
-    0%, 100% { 
-      left: 410px; 
-      opacity: 0; 
+    0%,
+    100% {
+      left: 410px;
+      opacity: 0;
     }
-    
-    25% { 
-      left: 0; 
-      opacity: 1; 
+
+    25% {
+      left: 0;
+      opacity: 1;
     }
-    
+
     50%,
-    75% { 
-      left: -410px; 
-      opacity: 0; 
+    75% {
+      left: -410px;
+      opacity: 0;
     }
   }
-  
+}
+
+@media (width < 376px) {
+
+  .news {
+    margin-block: 35px;
+  }
+
+  .news__slider-bottom {
+    margin-block: 0;
+    margin-inline-start: 10px;
+  }
 }

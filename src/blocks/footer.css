@@ -31,7 +31,7 @@
 }
 
 .footer__info-marker {
-  color: #84889A;
+  color: #84889a;
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -58,7 +58,7 @@
 }
 
 .footer__info-input {
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
   height: 48px;
   min-width: 319px;
   padding-inline-start: 20px;
@@ -67,7 +67,7 @@
 .footer__info-input::placeholder {
   font-size: 15px;
   font-weight: 400;
-  line-height: 18.15px;  
+  line-height: 18.15px;
 }
 
 .footer__info-button {
@@ -80,7 +80,7 @@
   .footer {
     margin-block-start: 40px;
   }
-  
+
   .footer__info {
     flex-direction: column;
     padding-inline-start: 10px;

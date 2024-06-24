@@ -1,6 +1,6 @@
 .page {
   background-color: #fff;
-  color: #3E404C;
+  color: #3e404c;
   font-family: Inter, sans-serif;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .span {
-  color: #443FDE;
+  color: #443fde;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -27,7 +27,7 @@
 }
 
 .decoration {
-  border-bottom: 1px solid #EBEBEF;
+  border-bottom: 1px solid #ebebef;
 }
 
 .margin-inline {
@@ -36,7 +36,7 @@
 }
 
 .background {
-  background-color: #F9F9FB;
+  background-color: #f9f9fb;
 }
 
 .list {
@@ -51,8 +51,8 @@
   transition: color 0.3s;
 }
 
-.nav-link:active {
-  color: #443FDE;
+.nav-link_active {
+  color: #443fde;
 }
 
 input::placeholder {
@@ -60,7 +60,7 @@ input::placeholder {
 }
 
 .panel {
-  outline: 1px solid #EBEBEF;
+  outline: 1px solid #ebebef;
   width: clamp(21.125rem, 15.3301rem + 24.7249vw, 45rem);
   height: 70px;
   display: flex;
@@ -100,7 +100,7 @@ input::placeholder {
 }
 
 .button {
-  background-color: #443FDE;
+  background-color: #443fde;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -113,14 +113,14 @@ input::placeholder {
   width: 48px;
   height: 48px;
   background-color: #fff;
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
 }
 
 .button-arrow-small {
   width: 48px;
   height: 20px;
   background-color: #fff;
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
 }
 
 .image {

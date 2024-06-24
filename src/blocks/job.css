@@ -5,7 +5,7 @@
 .job__search {
   text-align: center;
   padding-block: 16px;
-  border: 1px solid #EBEBEF;
+  border: 1px solid #ebebef;
   width: clamp(19.8125rem, 8.3592rem + 48.8673vw, 67rem);
   background-color: #fff;
   position: absolute;
@@ -79,5 +79,4 @@
   .job__article-paragraph {
     letter-spacing: -0.48px;
   }
-
 }

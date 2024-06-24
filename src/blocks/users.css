@@ -1,4 +1,4 @@
-.users { 
+.users {
   display: grid;
   justify-items: center;
   margin-block-start: 60px;
@@ -56,58 +56,58 @@
 
 @keyframes users {
 
-  0%, 
-  100% { 
-    left: 0; 
-    opacity: 1; 
+  0%,
+  100% {
+    left: 0;
+    opacity: 1;
   }
-  
-  33% { 
-    left: -960px; 
-    opacity: 0; 
+
+  33% {
+    left: -960px;
+    opacity: 0;
   }
-  
-  66% { 
-    left: 960px; 
-    opacity: 0; 
+
+  66% {
+    left: 960px;
+    opacity: 0;
   }
 }
 
 @keyframes secondusers {
 
-  0%, 
-  100% { 
-    left: 960px; 
-    opacity: 0; 
+  0%,
+  100% {
+    left: 960px;
+    opacity: 0;
   }
-  
-  33% { 
-    left: 0; 
-    opacity: 1; 
+
+  33% {
+    left: 0;
+    opacity: 1;
   }
-  
-  66% { 
-    left: -960px; 
-    opacity: 0; 
+
+  66% {
+    left: -960px;
+    opacity: 0;
   }
 }
 
 @keyframes thirdusers {
 
-  33% { 
-    left: 960px; 
-    opacity: 0; 
+  33% {
+    left: 960px;
+    opacity: 0;
   }
-  
-  66% { 
-    left: 0; 
-    opacity: 1; 
+
+  66% {
+    left: 0;
+    opacity: 1;
   }
-  
+
   0%,
-  100% { 
-    left: -960px; 
-    opacity: 0; 
+  100% {
+    left: -960px;
+    opacity: 0;
   }
 }
 
@@ -120,7 +120,7 @@
 
 .users-image {
   width: 384px;
-  height: 450px;
+  height: 439px;
 }
 
 .users__slider-info-paragraph {
@@ -132,7 +132,7 @@
 }
 
 .users__slider-info-post {
-  color: #443FDE;
+  color: #443fde;
   font-size: 16px;
   font-weight: 400;
   line-height: 28.8px;
@@ -208,7 +208,7 @@
   .users__slider {
     height: 358px;
   }
-  
+
   .users__slider-info {
     gap: 50px;
   }
@@ -220,5 +220,4 @@
   .users__button {
     display: none;
   }
-
 }
