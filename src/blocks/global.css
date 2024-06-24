@@ -38,3 +38,7 @@ a {
 img {
   width: 100%;
 }
+
+a:active {
+  color: #443FDE;
+}

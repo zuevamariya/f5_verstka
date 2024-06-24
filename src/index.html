@@ -13,58 +13,58 @@
     <title>Job</title>
   </head>
   <body class="page">
-    <header class="header section-size">
+    <header class="header margin-inline" id="home">
       <div class="header__logo logo">
         <div class="logo__group">
-          <img src="./images/svg/I.svg" alt="I"/>
-          <img src="./images/svg/P.svg" alt="P"/>
+          <img src="./images/svg/I.svg" alt="Logo part I"/>
+          <img src="./images/svg/P.svg" alt="Logo part P"/>
         </div>
-        <img class="header__logo_letter logo__letter" src="./images/svg/S.svg" alt="S"/>
+        <img class="header__logo_letter logo__letter" src="./images/svg/S.svg" alt="Logo part S"/>
         <div class="logo__group">
-          <img src="./images/svg/U.svg" alt="U"/>
-          <img src="./images/svg/M.svg" alt="M"/>
+          <img src="./images/svg/U.svg" alt="Logo part U"/>
+          <img src="./images/svg/M.svg" alt="Logo part M"/>
         </div>
-        <img class="header__logo_point logo__point" src="./images/svg/point.svg" alt="point"/>
+        <img class="header__logo_point logo__point" src="./images/svg/point.svg" alt="Logo part point"/>
       </div>
       <nav class="header__menu">
-        <ul class="header__menu_links list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Blog</a></li>
+        <ul class="header__menu-links list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#company">Company</a></li>
+          <li><a class="nav-link" href="#blog">Blog</a></li>
         </ul>
       </nav>
-      <div class="header__user">
-        <a class="header__menu_item" href="#">Post a Job</a>
-        <button class="button header__user_login-desktop">Log in</button>
-        <button class="header__user_login-mobile">
-          <img class="header__user_image" src="./images/svg/menu.svg" alt="menu" />
+      <div class="header__login">
+        <a class="header__menu-hidden nav-link" href="#job">Post a Job</a>
+        <button class="button header__login-desktop">Log in</button>
+        <button class="header__login-mobile ">
+          <img class="header__login-image" src="./images/svg/menu.svg" alt="menu" />
         </button>
       </div>
     </header>
     <main class="main">
       <section class="decoration"></section>
-      <section class="search section-size">
+      <section class="search margin-inline">
         <div class="search__panel">
-          <button class="span search__panel_button">New</button>
-          <span class="search__panel_text">Stay connected to get upcoming jobs</span>
+          <button class="span search__panel-button">New</button>
+          <span class="search__panel-text">Stay connected to get upcoming jobs</span>
         </div>
-        <div class="search__info">
-          <h1 class="title search__info_title">Find the most<br>exciting jobs in tech</h1>
-          <p  class="describe search__info_subtitle">
+        <article class="search__article">
+          <h1 class="title search__article-title">Find the most<br>exciting jobs in tech</h1>
+          <p  class="search__article-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, 
             pharetra leo et. Sign in or sign up to get started!
           </p>
-        </div>
+        </article>
         <div class="search__picture">
-          <div class="search__picture_field panel">
+          <div class="search__picture-field panel">
             <div class="panel__block">
-              <img class="panel__block_image" src="./images/svg/loupe.svg" alt="loupe" />
-              <input class="panel__block_input" type="text" placeholder="Search…"/>
+              <img class="panel__block-image" src="./images/svg/loupe.svg" alt="loupe" />
+              <input class="panel__block-input" type="text" placeholder="Search…"/>
             </div>
             <button class="button panel__button">Search</button>
           </div>
-          <img class="search__picture_image-desktop" src="./images/png/building_desktop.png" alt="building" />
-          <img class="search__picture_image-mobile" src="./images/png/building_mobile.png" alt="building" />
+          <img class="search__picture-desktop image" src="./images/png/building_desktop.png" alt="building" />
+          <img class="search__picture-mobile" src="./images/png/building_mobile.png" alt="building" />
         </div>
         <ul class="search__list list">
           <li><img src="./images/svg/OpenTable.svg" alt="OpenTable" /></li>
@@ -75,193 +75,205 @@
           <li><img src="./images/svg/Dropbox.svg" alt="Dropbox" /></li>
         </ul>
       </section>
-      <section class="vacancies background">
-        <div class="section-size">
+      <section class="background" id="job">
+        <div class="margin-inline vacancies">
           <div class="vacancies__info">
-            <div class="vacancies__info_text">
-              <h2 class="title vacancies__info_text-title">Explore the latest job openings</h2>
-              <p class="describe vacancies__info_text-subtitle">
+            <article class="vacancies__info-article">
+              <h2 class="title vacancies__info-article-title">Explore the latest job openings</h2>
+              <p class="vacancies__info-article-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra 
                 leo et, efficitur tortor. Fusce vel convallis magna.
               </p>
-            </div>
-            <button class="button vacancies__info_button">See All Jobs</button>
+            </article>
+            <button class="button vacancies__info-button">See All Jobs</button>
           </div>
           <ul class="vacancies__cards list">
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Dribble.png" alt="Dribble"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Dribble</span>
-                  <span class="vacancies__cards_item-date">October 25, 2022</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Dribble.png" alt="Dribble"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Dribble</span>
+                  <span class="item__top-paragraph-date">October 25, 2022</span>
                 </p>
-              </div>
+              </aside>
               Front End Developer
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Marketing</span>
-                  <span class="marker vacancies__cards_item-time">Part Time</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Marketing</span>
+                  <span class="marker item__bottom-marker-time">Part Time</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">San Antonio</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">San Antonio</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">130k-160k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">130k-160k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Dribble.png" alt="Dribble"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Dribble</span>
-                  <span class="vacancies__cards_item-date">October 25, 2022</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Dribble.png" alt="Dribble"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Dribble</span>
+                  <span class="item__top-paragraph-date">October 25, 2022</span>
                 </p>
-              </div>
+              </aside>
               Backend Developer
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Design</span>
-                  <span class="marker vacancies__cards_item-time">Full Time</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Design</span>
+                  <span class="marker item__bottom-marker-time">Full Time</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">Dallas</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">Dallas</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">50k-70k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">50k-70k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Tokopedia.png" alt="Tokopedia"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Tokopedia</span>
-                  <span class="vacancies__cards_item-date">March 30, 2021</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Tokopedia.png" alt="Tokopedia"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Tokopedia</span>
+                  <span class="item__top-paragraph-date">March 30, 2021</span>
                 </p>
-              </div>     
+              </aside>     
               Scrum Master
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Marketing</span>
-                  <span class="marker vacancies__cards_item-time">Part Time</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Marketing</span>
+                  <span class="marker item__bottom-marker-time">Part Time</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">San Antonio</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">San Antonio</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">130k-160k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">130k-160k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Facebook.png" alt="Facebook"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Facebook</span>
-                  <span class="vacancies__cards_item-date">March 30, 2021</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Facebook.png" alt="Facebook"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Facebook</span>
+                  <span class="item__top-paragraph-date">March 30, 2021</span>
                 </p>
-              </div>
+              </aside>
               Lead Technical Architect
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Technology</span>
-                  <span class="marker vacancies__cards_item-time">Full Time</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Technology</span>
+                  <span class="marker item__bottom-marker-time">Full Time</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">Melbourne</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">Melbourne</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">210k-240k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">210k-240k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Spotify.png" alt="Spotify"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Spotify</span>
-                  <span class="vacancies__cards_item-date">March 30, 2021</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Spotify.png" alt="Spotify"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Spotify</span>
+                  <span class="item__top-paragraph-date">March 30, 2021</span>
                 </p>
-              </div>
+              </aside>
               Digital Media Strategist
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Business</span>
-                  <span class="marker vacancies__cards_item-time">Casual</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Business</span>
+                  <span class="marker item__bottom-marker-time">Casual</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">New York</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">New York</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">50k-70k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">50k-70k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
-            <li class="title vacancies__cards_item">
-              <div class="vacancies__cards_item-top">
-                <img class="vacancies__cards_item-image" src="./images/png/Paypal.png" alt="Paypal"/>
-                <p class="vacancies__cards_item-data">
-                  <span class="vacancies__cards_item-company">Paypal</span>
-                  <span class="vacancies__cards_item-date">March 30, 2021</span>
+            <li class="title vacancies__cards-item item">
+              <aside class="item__top">
+                <div class="item__top-image">
+                  <img class="image" src="./images/png/Paypal.png" alt="Paypal"/>
+                </div>
+                <p class="item__top-paragraph">
+                  <span class="item__top-paragraph-company">Paypal</span>
+                  <span class="item__top-paragraph-date">March 30, 2021</span>
                 </p>
-              </div>
+              </aside>
               Systems Administrator
-              <div class="vacancies__cards_item-bottom">
-                <p class="vacancies__cards_item-marker">
-                  <span class="marker vacancies__cards_item-area">Business</span>
-                  <span class="marker vacancies__cards_item-time">Casual</span>
+              <aside class="item__bottom">
+                <p class="item__bottom-marker">
+                  <span class="marker item__bottom-marker-area">Business</span>
+                  <span class="marker item__bottom-marker-time">Casual</span>
                 </p>
-                <div class="vacancies__cards_item-info">
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-location" src="./images/svg/location.svg" alt="location" />
-                    <span class="note">California</span>
+                <div class="item__bottom-container">
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-location" src="./images/svg/location.svg" alt="location" />
+                    <span class="item__bottom-paragraph-text">California</span>
                   </p>
-                  <p class="vacancies__cards_item-text">
-                    <img class="vacancies__cards_item-salary" src="./images/svg/salary.svg" alt="salary" />
-                    <span class="note">$</span>
-                    <span class="note">40k-50k</span>
+                  <p class="item__bottom-paragraph">
+                    <img class="item__bottom-paragraph-salary" src="./images/svg/salary.svg" alt="salary" />
+                    <span class="item__bottom-paragraph-text">$</span>
+                    <span class="item__bottom-paragraph-text">40k-50k</span>
                   </p>
                 </div>
-              </div>
+              </aside>
             </li>
           </ul>
         </div>
       </section>
-      <section class="companies section-size">
+      <section class="companies margin-inline" id="company">
         <div class="companies__info">
-          <div class="companies__info_text">
-            <h2 class="title companies__info_text-title">Work with exciting companies</h2>
-            <p class="companies__info_text-subtitle">
+          <article class="companies__info-article">
+            <h2 class="title companies__info-article-title">Work with exciting companies</h2>
+            <p class="companies__info-article-paragraph">
               Discover more than 1,600 open positions
             </p>
-          </div>
-          <div class="companies__info_button">
+          </article>
+          <div class="companies__info-button">
             <button class="button-arrow">
               <img src="./images/svg/arrow_left.svg" alt="left" />
             </button>
@@ -271,164 +283,184 @@
           </div>
         </div>
         <ul class="companies__slider list">
-          <li class="firstanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Dribble.png" alt="Dribble"/>
+          <li class="firstanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Dribble.png" alt="Dribble"/>
+              </div>
               <span class="title companies__slider_item-company">Dribble</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">65 Employees</span>
+            <span class="marker companies__slider-marker">65 Employees</span>
           </li>
-          <li class="secondanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Paypal.png" alt="Paypal"/>
+          <li class="secondanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Paypal.png" alt="Paypal"/>
+              </div>
               <span class="title companies__slider_item-company">Paypal</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">6000 Employees</span>
+            <span class="marker companies__slider-marker">6000 Employees</span>
           </li>
-          <li class="thirdanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Spotify.png" alt="Spotify"/>
+          <li class="thirdanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Spotify.png" alt="Spotify"/>
+              </div>
               <span class="title companies__slider_item-company">Spotify</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">2000 Employees</span>
+            <span class="marker companies__slider-marker">2000 Employees</span>
           </li>
-          <li class="fourthanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Slack.png" alt="Slack"/>
+          <li class="fourthanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Slack.png" alt="Slack"/>
+              </div>
               <span class="title companies__slider_item-company">Slack</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">400 Employees</span>
+            <span class="marker companies__slider-marker">400 Employees</span>
           </li>
-          <li class="fifthanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Facebook.png" alt="Facebook"/>
+          <li class="fifthanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Facebook.png" alt="Facebook"/>
+              </div>
               <span class="title companies__slider_item-company">Facebook</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">9000 Employees</span>
+            <span class="marker companies__slider-marker">9000 Employees</span>
           </li>
-          <li class="sixthanimation-companies companies__slider_item">
-            <div class="companies__slider_item-box">
-              <img class="companies__slider_item-image" src="./images/png/Tokopedia.png" alt="Tokopedia"/>
+          <li class="sixthanimation-companies companies__slider-item">
+            <aside class="companies__slider-box">
+              <div class="companies__slider-box-image">
+                <img class="image" src="./images/png/Tokopedia.png" alt="Tokopedia"/>
+              </div>
               <span class="title companies__slider_item-company">Tokopedia</span>
-            </div>
-            <p class="describe companies__slider_item-info">
+            </aside>
+            <p class="companies__slider-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis 
               metus gravida tristique.
             </p>
-            <span class="marker companies__slider_item-employees">1000 Employees</span>
+            <span class="marker companies__slider-marker">1000 Employees</span>
           </li>
         </ul>      
       </section>
-      <section class="site section-size">
+      <section class="site margin-inline">
         <div class="site__picture">
-          <img class="site__picture_image" src="./images/png/site_section_picture.png" alt="men" />
-          <p class="describe site__picture_info">Partnership with Glassdoor and LinkedIn</p>
-          <span class="span site__picture_span">Why choose us</span>
+          <div class="site__picture-image">
+            <img class="image" src="./images/png/site_section_picture.png" alt="men" />
+          </div>
+          <p class="site__picture-paragraph">Partnership with Glassdoor and LinkedIn</p>
+          <span class="span site__picture-span">Why choose us</span>
         </div>
-        <div class="site__info">
-          <h2 class="title site__info_title">Build a custom membership site with locked content.</h2>
-          <p class="site__info_describe">
+        <article class="site__article">
+          <h2 class="title site__article-title">Build a custom membership site with locked content.</h2>
+          <p class="site__article-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra 
             leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed 
             laoreet feugiat consequat.
           </p>
-          <ul class="site__info_list list">
-            <li class="site__info_list-item">
-              <img class="site__info_list-item-image" src="./images/png/site_section_icon.png" alt="icon" />
-              <span class="site__info_list-title">Add a feature point here</span>
-              <span class="site__info_list-item-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <ul class="site__article-list list">
+            <li class="site__article-item">
+              <div class="site__article-item-image">
+                <img class="image" src="./images/png/site_section_icon.png" alt="icon" />
+              </div>
+              <span class="site__article-item-title">Add a feature point here</span>
+              <p class="site__article-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </li>
-            <li class="site__info_list-item">
-              <img class="site__info_list-item-image" src="./images/png/site_section_icon.png" alt="icon" />
-              <span class="site__info_list-title">Add a feature point here</span>
-              <span class="site__info_list-item-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <li class="site__article-item">
+              <div class="site__article-item-image">
+                <img class="image" src="./images/png/site_section_icon.png" alt="icon" />
+              </div>
+              <span class="site__article-item-title">Add a feature point here</span>
+              <p class="site__article-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </li>
-            <li class="site__info_list-item">
-              <img class="site__info_list-item-image" src="./images/png/site_section_icon.png" alt="icon" />
-              <span class="site__info_list-title">Add a feature point here</span>
-              <span class="site__info_list-item-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <li class="site__article-item">
+              <div class="site__article-item-image">
+                <img class="image" src="./images/png/site_section_icon.png" alt="icon" />
+              </div>
+              <span class="site__article-item-title">Add a feature point here</span>
+              <p class="site__article-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </li>
           </ul>
-        </div>
+        </article>
       </section>
-      <section class="background">
-        <div class="section-size users">
+      <section class="background" id="blog">
+        <div class="margin-inline users">
           <span class="span users__span">Testimonial</span>
           <h2 class="title users__title">See what users say about our job platform</h2>
           <div class="users__box">
             <ul class="list users__slider">
-              <li class="firstanimation-users users__slider_item">
-                <div class="users__slider_item-info">
-                  <p class="users__box_info-describe">
+              <li class="firstanimation-users users__slider-item">
+                <div class="users__slider-info">
+                  <p class="users__slider-info-paragraph">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra 
                     leo et, efficitur tortor. Fusce vel convallis magna”
                   </p>
-                  <span class="users__box_info-post">David Sinclair - Senior Frontend Developer</span>
+                  <span class="users__slider-info-post">David Sinclair - Senior Frontend Developer</span>
                 </div>
-                <div class="users-image">
-                  <img class="users__box_item-image" src="./images/png/users_section_picture.png" alt="user" />
+                <div class="users__slider-image">
+                  <img class="users-image" src="./images/png/users_section_picture.png" alt="user" />
                 </div>
-                <div class="users-image_mobile">
-                  <img class="users__box_item-image_mobile" src="./images/png/monkey.png" alt="monkey" />
+                <div class="users__slider-image_mobile">
+                  <img class="image" src="./images/png/monkey.png" alt="monkey" />
                 </div>
               </li>
-              <li class="secondanimation-users users__slider_item">
-                <div class="users__slider_item-info">
-                  <p class="users__box_info-describe">
+              <li class="secondanimation-users users__slider-item">
+                <div class="users__slider-info">
+                  <p class="users__slider-info-paragraph">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra 
                     leo et, efficitur tortor. Fusce vel convallis magna”
                   </p>
-                  <span class="users__box_info-post">David Sinclair - Senior Frontend Developer</span>
+                  <span class="users__slider-info-post">David Sinclair - Senior Frontend Developer</span>
                 </div>
-                <div class="users-image">
-                  <img class="users__box_item-image" src="./images/png/users_section_picture.png" alt="user" />
+                <div class="users__slider-image">
+                  <img class="users-image" src="./images/png/users_section_picture.png" alt="user" />
                 </div>
-                <div class="users-image_mobile">
-                  <img class="users__box_item-image_mobile" src="./images/png/monkey.png" alt="monkey" />
+                <div class="users__slider-image_mobile">
+                  <img class="image" src="./images/png/monkey.png" alt="monkey" />
                 </div>
               </li>
-              <li class="thirdanimation-users users__slider_item">
-                <div class="users__slider_item-info">
-                  <p class="users__box_info-describe">
+              <li class="thirdanimation-users users__slider-item">
+                <div class="users__slider-info">
+                  <p class="users__slider-info-paragraph">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra 
                     leo et, efficitur tortor. Fusce vel convallis magna”
                   </p>
-                  <span class="users__box_info-post">David Sinclair - Senior Frontend Developer</span>
+                  <span class="users__slider-info-post">David Sinclair - Senior Frontend Developer</span>
                 </div>
-                <div class="users-image">
-                  <img class="users__box_item-image" src="./images/png/users_section_picture.png" alt="user" />
+                <div class="users__slider-image">
+                  <img class="users-image" src="./images/png/users_section_picture.png" alt="user" />
                 </div>
-                <div class="users-image_mobile">
-                  <img class="users__box_item-image_mobile" src="./images/png/monkey.png" alt="monkey" />
+                <div class="users__slider-image_mobile">
+                  <img class="image" src="./images/png/monkey.png" alt="monkey" />
                 </div>
               </li>
             </ul>
             <div class="users__box_info-button">
               <button class="button-arrow">
-                <img class="users__box_item-image_mobile" src="./images/svg/arrow_left.svg" alt="left" />
+                <img src="./images/svg/arrow_left.svg" alt="left" />
               </button>
               <button class="button-arrow">
-                <img class="users__box_item-image_mobile" src="./images/svg/arrow_right.svg" alt="right" />
+                <img src="./images/svg/arrow_right.svg" alt="right" />
               </button>
             </div>
             <div class="users__box_info-button_small">
@@ -442,10 +474,10 @@
           </div>
         </div>
       </section>
-      <section class="news section-size">
-        <div class="news__info">
-          <h2 class="title news__info_title">Get the latest news about jobs!</h2>
-          <div class="news__info_button">
+      <section class="news margin-inline">
+        <article class="news__article">
+          <h2 class="title news__article-title">Get the latest news about jobs!</h2>
+          <div class="news__article-button">
             <button class="button-arrow">
               <img src="./images/svg/arrow_left.svg" alt="left" />
             </button>
@@ -453,79 +485,79 @@
               <img src="./images/svg/arrow_right.svg" alt="right" />
             </button>
           </div>
-        </div>
+        </article>
         <ul class="news__slider list">
-          <li class="firstanimation-news news__slider_item">
-            <div class="news__slider_item-top">
-              <img class="news__slider_item-image" src="./images/png/news_section_1.png" alt="office room" />
+          <li class="firstanimation-news news__slider-item">
+            <div class="news__slider-top">
+              <img class="news__slider-top-image" src="./images/png/news_section_1.png" alt="office room" />
             </div>
-            <div class="news__slider_item-bottom">
-              <span class="marker news__slider_item-marker">Resources</span>
-              <p class="title news__slider_item-title">Finding employees in the gig economy</p>
-              <div class="news__slider_item-date">
-                <img class="news__slider_item-date-image" src="./images/svg/slider_point.svg" alt="point" />
-                <span class="news__slider_item-date-text">October 24, 2022</span>
+            <div class="news__slider-bottom">
+              <span class="marker news__slider-bottom-marker">Resources</span>
+              <p class="title news__slider-bottom-title">Finding employees in the gig economy</p>
+              <div class="news__slider-bottom-date">
+                <img class="news__slider-date-image" src="./images/svg/slider_point.svg" alt="point" />
+                <span class="news__slider-date-text">October 24, 2022</span>
               </div>
-              <button class="news__slider_item-button">
-                <span class="news__slider_item-button-text">Read More</span>
-                <img class="news__slider_item-button-image" src="./images/svg/button_arrow.svg" alt="next" />
+              <button class="news__slider-bottom-button">
+                <span class="news__slider-button-text">Read More</span>
+                <img class="news__slider-button-image" src="./images/svg/button_arrow.svg" alt="next" />
               </button>
             </div>
           </li>
-          <li class="secondanimation-news news__slider_item">
-            <div class="news__slider_item-top">
-              <img class="news__slider_item-image" src="./images/png/news_section_2.png" alt="laptop" />
+          <li class="secondanimation-news news__slider-item">
+            <div class="news__slider-top">
+              <img class="news__slider-top-image" src="./images/png/news_section_2.png" alt="laptop" />
             </div>
-            <div class="news__slider_item-bottom">
-              <span class="marker news__slider_item-marker">Education</span>
-              <p class="title news__slider_item-title">How to make a great first impression everytime</p>
-              <div class="news__slider_item-date">
-                <img class="news__slider_item-date-image" src="./images/svg/slider_point.svg" alt="point" />
-                <span class="news__slider_item-date-text">October 24, 2022</span>
+            <div class="news__slider-bottom">
+              <span class="marker news__slider-bottom-marker">Education</span>
+              <p class="title news__slider-bottom-title">How to make a great first impression everytime</p>
+              <div class="news__slider-bottom-date">
+                <img class="news__slider-date-image" src="./images/svg/slider_point.svg" alt="point" />
+                <span class="news__slider-date-text">October 24, 2022</span>
               </div>
-              <button class="news__slider_item-button">
-                <span class="news__slider_item-button-text">Read More</span>
-                <img class="news__slider_item-button-image" src="./images/svg/button_arrow.svg" alt="next" />
+              <button class="news__slider-bottom-button">
+                <span class="news__slider-button-text">Read More</span>
+                <img class="news__slider-button-image" src="./images/svg/button_arrow.svg" alt="next" />
               </button>
             </div>
           </li>
-          <li class="thirdanimation-news news__slider_item">
-            <div class="news__slider_item-top">
-              <img class="news__slider_item-image" src="./images/png/news_section_3.png" alt="keyboard" />
+          <li class="thirdanimation-news news__slider-item">
+            <div class="news__slider-top">
+              <img class="news__slider-top-image" src="./images/png/news_section_3.png" alt="keyboard" />
             </div>
-            <div class="news__slider_item-bottom">
-              <span class="marker news__slider_item-marker">Trends</span>
-              <p class="title news__slider_item-title">Find out the best paying careers in 2022</p>
-              <div class="news__slider_item-date">
-                <img class="news__slider_item-date-image" src="./images/svg/slider_point.svg" alt="point" />
-                <span class="news__slider_item-date-text">October 24, 2022</span>
+            <div class="news__slider-bottom">
+              <span class="marker news__slider-bottom-marker">Trends</span>
+              <p class="title news__slider-bottom-title">Find out the best paying careers in 2022</p>
+              <div class="news__slider-bottom-date">
+                <img class="news__slider-date-image" src="./images/svg/slider_point.svg" alt="point" />
+                <span class="news__slider-date-text">October 24, 2022</span>
               </div>
-              <button class="news__slider_item-button">
-                <span class="news__slider_item-button-text">Read More</span>
-                <img class="news__slider_item-button-image" src="./images/svg/button_arrow.svg" alt="next" />
+              <button class="news__slider-bottom-button">
+                <span class="news__slider-button-text">Read More</span>
+                <img class="news__slider-button-image" src="./images/svg/button_arrow.svg" alt="next" />
               </button>
             </div>
           </li>
-          <li class="fourthanimation-news news__slider_item">
-            <div class="news__slider_item-top">
-              <img class="news__slider_item-image" src="./images/png/news_section_4.png" alt="office meeting" />
+          <li class="fourthanimation-news news__slider-item">
+            <div class="news__slider-top">
+              <img class="news__slider-top-image" src="./images/png/news_section_4.png" alt="office meeting" />
             </div>
-            <div class="news__slider_item-bottom">
-              <span class="marker news__slider_item-marker">Careers</span>
-              <p class="title news__slider_item-title">Ten things to nail your next job Interview</p>
-              <div class="news__slider_item-date">
-                <img class="news__slider_item-date-image" src="./images/svg/slider_point.svg" alt="point" />
-                <span class="news__slider_item-date-text">October 24, 2022</span>
+            <div class="news__slider-bottom">
+              <span class="marker news__slider-bottom-marker">Careers</span>
+              <p class="title news__slider-bottom-title">Ten things to nail your next job Interview</p>
+              <div class="news__slider-bottom-date">
+                <img class="news__slider-date-image" src="./images/svg/slider_point.svg" alt="point" />
+                <span class="news__slider-date-text">October 24, 2022</span>
               </div>
-              <button class="news__slider_item-button">
-                <span class="news__slider_item-button-text">Read More</span>
-                <img class="news__slider_item-button-image" src="./images/svg/button_arrow.svg" alt="next" />
+              <button class="news__slider-bottom-button">
+                <span class="news__slider-button-text">Read More</span>
+                <img class="news__slider-button-image" src="./images/svg/button_arrow.svg" alt="next" />
               </button>
             </div>
           </li>
         </ul>
       </section>
-      <section class="section-size">
+      <section class="margin-inline">
         <div class="job">
           <div class="job__search">
             <img class="job__search_image" src="./images/png/loupe.png" alt="loupe" />
@@ -539,8 +571,8 @@
           </div>
           <div class="job__panel panel">
             <div class="panel__block">
-              <img class="panel__block_image" src="./images/svg/loupe.svg" alt="loupe" />
-              <input class="panel__block_input" type="text" placeholder="Search…"/>
+              <img class="panel__block-image" src="./images/svg/loupe.svg" alt="loupe" />
+              <input class="panel__block-input" type="text" placeholder="Search…"/>
             </div>
             <button class="button panel__button">Search</button>
           </div>
@@ -548,35 +580,35 @@
       </section>
       <section class="decoration"></section>
     </main>
-    <footer class="footer section-size">
+    <footer class="footer margin-inline">
       <div class="footer__logo logo">
         <div class="logo__group">
-          <img src="./images/svg/I.svg" alt="I"/>
-          <img src="./images/svg/P.svg" alt="P"/>
+          <img src="./images/svg/I.svg" alt="Logo part I"/>
+          <img src="./images/svg/P.svg" alt="Logo part P"/>
         </div>
-        <img class="footer__logo_letter logo__letter" src="./images/svg/S.svg" alt="S"/>
+        <img class="footer__logo_letter logo__letter" src="./images/svg/S.svg" alt="Logo part S"/>
         <div class="logo__group">
-          <img src="./images/svg/U.svg" alt="U"/>
-          <img src="./images/svg/M.svg" alt="M"/>
+          <img src="./images/svg/U.svg" alt="Logo part U"/>
+          <img src="./images/svg/M.svg" alt="Logo part M"/>
         </div>
-        <img class="footer__logo_point logo__point" src="./images/svg/point.svg" alt="point"/>
+        <img class="footer__logo_point logo__point" src="./images/svg/point.svg" alt="Logo part point"/>
       </div>
       <div class="footer__info">
-        <div class="footer__info_nav">
-          <span class="footer__info_nav-marker">pages</span>
+        <div class="footer__info-nav">
+          <span class="footer__info-marker">pages</span>
           <nav>
-            <ul class="footer__info_nav-list list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Blog</a></li>
+            <ul class="footer__info-list list">
+              <li><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#company">Company</a></li>
+              <li><a class="nav-link" href="#blog">Blog</a></li>
             </ul>
           </nav>
         </div>
-        <div class="footer__info_search">
-          <span class="footer__info_nav-marker">Sign up to our newsletter</span>
-          <div class="footer__info_search-panel footer__panel">
-            <input class="footer__panel_input" type="text" placeholder="Email address"/>
-            <button class="button footer__panel_button">Get Started</button>
+        <div class="footer__info-search">
+          <span class="footer__info-marker">Sign up to our newsletter</span>
+          <div class="footer__info-panel">
+            <input class="footer__info-input" type="text" placeholder="Email address"/>
+            <button class="button footer__info-button">Get Started</button>
           </div>
         </div>
       </div>

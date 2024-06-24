@@ -1,73 +1,16 @@
-.page {
-  background-color: #fff;
-  color: #3E404C;
-}
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.background {
-  background-color: #F9F9FB;
-}
 
-.decoration {
-  border-bottom: 1px solid #EBEBEF;
-}
 
-.section-size {
-  margin-inline-end: clamp(0.6875rem, -4.4551rem + 21.9417vw, 21.875rem);
-  margin-inline-start: clamp(0.6875rem, -5.6687rem + 27.1197vw, 26.875rem);
-}
 
-.button {
-  background-color: #443FDE;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  border: none;
-}
 
-.title {
-  font-family: Archivo, sans-serif;
-  font-weight: 700;
-  color: #030407;
-}
 
-.describe {
-  color: #3E404C;
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-}
 
-.marker {
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.8px;
-  letter-spacing: 0.5px;
-  height: 29px;
-  text-align: center;
-  padding: 6px 12px;
-}
 
-.span {
-  color: #443FDE;
-  font-family: Inter, sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
-.button-arrow {
-  width: 48px;
-  height: 48px;
-  background-color: #fff;
-  border: 1px solid #EBEBEF;
-}
+
+
+
 
 .button-arrow_small {
   width: 48px;
@@ -76,49 +19,21 @@
   border: 1px solid #EBEBEF;
 }
 
-.panel {
-  outline: 1px solid #EBEBEF;
-  width: clamp(21.125rem, 15.3301rem + 24.7249vw, 45rem);
-  height: 70px;
-  display: flex;
-  background-color: #fff;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 10px;
-}
 
-.panel__block {
-  display: flex;
-  align-items: center;
-}
 
-.panel__block_image {
-  width: 22px;
-  height: 21px;
-}
 
-.panel__block_input {
-  border: none;
-  height: 44px;
-  margin-inline-start: 10px;
-  max-width: 552px;
-}
+
+
+
+
 
 input::placeholder {
   color: #999;
 }
 
-.panel__block_input::placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.94px;
-}
 
-.panel__button {
-  height: 44px;
-  width: 110px;
-  margin-inline-start: 13px;
-}
+
+
 
 .logo {
   padding: 5px 0 2px;
@@ -146,9 +61,7 @@ input::placeholder {
   height: 9px;
 }
 
-.list {
-  list-style: none;
-}
+
 
 @media (width < 376px) {
 

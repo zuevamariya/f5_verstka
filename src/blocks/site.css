@@ -7,22 +7,23 @@
   justify-items: start;
 }
 
-.site__picture_info {
+.site__picture-paragraph {
   min-height: 54px;
   text-align: center;
   min-width: 366px;
   font-size: 15px;
+  font-weight: 400;
   line-height: 16.8px;
   background-color: #F8F8FA;
   padding-block-start: 15px;
   clip-path: polygon(15% 0, 22% 90%, 78% 90%, 85% 0%);
 }
 
-.site__picture_span {
+.site__picture-span {
   display: none;
 }
 
-.site__info {
+.site__article {
   grid-column: 3 / 4;
   padding-block-start: 25px;
   display: flex;
@@ -30,27 +31,27 @@
   align-items: start;
 }
 
-.site__info_title {
+.site__article-title {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.8px;
 }
 
-.site__info_describe {
+.site__article-paragraph {
   padding-block-start: 30px;
   font-size: 16px;
   line-height: 28.8px;
   letter-spacing: 0.3px;
 }
 
-.site__info_list {
+.site__article-list {
   padding-block-start: 35px;
   display: grid;
   gap: 15px;
   width: clamp(21.125rem, 18.3944rem + 11.6505vw, 32.375rem);
 }
 
-.site__info_list-item {
+.site__article-item {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content 1fr;
@@ -60,28 +61,31 @@
   row-gap: 5px;
 }
 
-.site__info_list-item-image {
+.site__article-item-image {
   width: 56px;
   height: 56px;
   grid-row: 1 / 3;
 }
 
-.site__info_list-title {
+.site__article-item-title {
   color: #030407;
-  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 28.8px;
   letter-spacing: -0.4px;
 }
 
-.site__info_list-item-describe {
+.site__article-item-paragraph {
   color: #606476;
-  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22.4px;
   letter-spacing: 0.3px;
+}
+
+.site__picture-image {
+  width: 518px;
+  height: 540px;
 }
 
 @media (width < 1901px) {
@@ -90,15 +94,15 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .site__picture_info {
+  .site__picture-paragraph {
     clip-path: polygon(0 0, 10% 100%, 90% 100%, 100% 0%);
   }
 }
 
 @media (width < 1400px) {
 
-  .site__picture_image,
-  .site__picture_info {
+  .site__picture-image,
+  .site__picture-paragraph {
     display: none;
   }
 
@@ -107,7 +111,7 @@
     flex-direction: column;
   }
 
-  .site__picture_span {
+  .site__picture-span {
     display: block;
     font-size: 14px;
     line-height: 25.2px;
@@ -123,15 +127,15 @@
     gap: 10px;
   }
 
-  .site__info {
+  .site__article {
     padding: 0;
   }
 
-  .site__info_list-item {
+  .site__article-item {
     padding: 20px 14px 12px;
   }
 
-  .site__info_list-item-describe {
+  .site__article-item-paragraph {
     letter-spacing: 0.1px;
   }
 

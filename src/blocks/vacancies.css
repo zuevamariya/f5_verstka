@@ -7,7 +7,7 @@
   justify-items: end;
 }
 
-.vacancies__info_text {
+.vacancies__info-article {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -15,19 +15,20 @@
   gap: 20px;
 }
 
-.vacancies__info_text-title {
+.vacancies__info-article-title {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.9px;
 }
 
-.vacancies__info_text-subtitle {
+.vacancies__info-article-paragraph {
   line-height: 28.8px;
   letter-spacing: 0.2px;
   font-size: 16px;
+  font-weight: 400;
 }
 
-.vacancies__info_button {
+.vacancies__info-button {
   width: 119px;
   height: 44px;
 }
@@ -41,94 +42,94 @@
   gap: 30px;
 }
 
-.vacancies__cards_item {
-  padding: 30px;
+.vacancies__cards-item {
   background-color: #fff;
   border: 1px solid #EBEBEF;
   font-size: 18px;
   line-height: 23.4px;
 }
 
-.vacancies__cards_item-top {
+.item {
+  padding: 30px;
+}
+
+.item__top {
   display: flex;
   gap: 10px;
   margin-block-end: 22px;
 }
 
-.vacancies__cards_item-image {
+.item__top-image {
   width: 56px;
   height: 56px;
 }
 
-.vacancies__cards_item-data {
+.item__top-paragraph {
   display: grid;
 }
 
-.vacancies__cards_item-company {
+.item__top-paragraph-company {
   color: #030407;
-  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 28.8px;
   letter-spacing: -0.3px;
 }
 
-.vacancies__cards_item-date {
+.item__top-paragraph-date {
   color: #606476;
-  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22.4px;
   letter-spacing: -0.3px;
 }
 
-.vacancies__cards_item-bottom {
+.item__bottom {
   display: grid;
 }
 
-.vacancies__cards_item-marker {
+.item__bottom-marker {
   margin-block: 25px;
   display: flex;
   gap: 7px;
 }
 
-.vacancies__cards_item-location {
+.item__bottom-paragraph-location {
   align-items: start;
   width: 17px;
   height: 20px;
 }
 
-.vacancies__cards_item-salary {
+.item__bottom-paragraph-salary {
   width: 24px;
   height: 24px;
 }
 
-.vacancies__cards_item-area {
+.item__bottom-marker-area {
   color: #443FDE;
   background-color: #F3F3FC;
 }
 
-.vacancies__cards_item-time {
+.item__bottom-marker-time {
   color: #C98B40;
   background-color: #FEF7F1;
 }
 
-.vacancies__cards_item-info {
+.item__bottom-container {
   display: flex;
   align-items: center;
   gap: 35px;
 }
 
-.note {
+.item__bottom-paragraph-text {
   color: #606476;
-  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;
   letter-spacing: -0.4px;
 }
 
-.vacancies__cards_item-text {
+.item__bottom-paragraph {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -146,7 +147,7 @@
 
 @media (width < 1560px) {
 
-  .vacancies__cards_item-info {
+  .item__bottom-container {
     display: grid;
     gap: 0;
   }
@@ -178,11 +179,11 @@
     gap: 5px;
   }
 
-  .vacancies__cards_item {
+  .vacancies__cards-item {
     max-width: 350px;
   }
 
-  .vacancies__info_button {
+  .vacancies__info-button {
     width: 200px;
     margin-block: 30px;
   }
@@ -190,19 +191,19 @@
 
 @media (width < 376px) {
 
-  .vacancies__cards_item-top {
+  .item__top {
     margin-block-end: 25px;
   }
 
-  .vacancies__cards_item-bottom {
+  .item__bottom {
     margin-block-start: 25px;
   }
 
-  .vacancies__cards_item-company {
+  .item__top-paragraph-company {
     padding-block-start: 10px;
   }
   
-  .vacancies__cards_item-date {
+  .item__top-paragraph-date {
     padding-block-start: 10px;
   }
 
@@ -217,30 +218,30 @@
     gap: 31px;
   }
 
-  .vacancies__cards_item {
+  .vacancies__cards-item {
     max-height: 263px;
     width: 337px;
     padding: 30px 30px 3px 25px;
   }
 
-  .vacancies__info_button {
+  .vacancies__info-button {
     min-width: 337px;
     margin-block: 30px 40px;
   }
 
-  .vacancies__cards_item-marker {
+  .item__bottom-marker {
     display: grid;
     justify-content: start;
     gap: 0;
     margin-block: 0;
   }
 
-  .vacancies__cards_item-text {
+  .item__bottom-paragraph {
     align-items: center;
   }
 
-  .vacancies__cards_item-date,
-  .vacancies__cards_item-company {
+  .item__top-paragraph-date,
+  .item__top-paragraph-company {
     line-height: 16.8px;
   }
 
